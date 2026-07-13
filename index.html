@@ -43,11 +43,9 @@
         //1. находим инпуты по ID и забираем из них цифры, которые вы ввели
         const S = parseFloat(document. getElementById('price').value) || 0;
         const annualRate = parseFloat(
-          document.getElementById('payment').value) ||
-          0;
+          document.getElementById('payment').value) || 0;
         const n = parseInt(document. getElementById('months-count').value) ||0;
-        if (S<= 0 || annualRate <= 0|| n<=
-            0) {
+        if (S<= 0 || annualRate <= 0|| n<= 0) {
           alert("пожалуйста заполните все поля числами больше нуля!")
           return;
         }
