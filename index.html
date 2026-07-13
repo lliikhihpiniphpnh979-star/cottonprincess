@@ -11,5 +11,6 @@
 <body>
   <h2> укажите  месяц с начало </h2>
 <label for="months-count">срок кредита:</label>
-  <input type="number" id="months-count" name="months-count" min="1" max="60">
+  <input type="number" min="1" max="60" placeholder="0"
+    oniput="if(parselnt(this.value) >60) this.value = 60;">
   
