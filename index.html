@@ -43,8 +43,26 @@
         //1. находим инпуты по ID и забираем из них цифры, которые вы ввели
         const S = parseFloat(document.
                              getElementById('price').value) || 0;
-        const
-    </script>
-</body>
-  
+        const annualRate = parseFloat(
+          document.getElementById('payment').value) ||
+          0;
+        const n = parseInt(document.
+                           getElementById('months-count').value) ||0;
+        if (S<= 0 || annualRate <= 0|| n<=
+            0) {
+          alert("пожалуйста заполните все поля числами больше нуля!")
+          return;
+        }
+        const r = annualRate / 12 / 100;
+        const M = S * (r * Math.pow(1
+                                    +r, n) - 1);
+        const total = M * n;
+        const overpayment = total - S;
+        document .getElementById(
+          'result-overpayment').innerText = overpayment
+        ,toFixed(2);
+      }
+    </scrypt>
+      </body>
+      </html>
   
