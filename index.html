@@ -7,14 +7,14 @@
   <body>
     <h1>считание кредитов и налогов!</h1>
   <h2> укажите  месяц с начало </h2>
-<label for="months-count">срок кредита(MONTHS):</label>
-  <input type="number" min="1" max="60" placeholder="0"
+<label for="months-count">срок кредита(MONTHS):</label><br>
+  <input type="number" id="months-count" min="1" max="60" placeholder="0"
    <oninput="if(parselnt(this.value) >60) this.value = 60;">
-<input type="number" id="price"  placeholder="0"
-  <label for="payment"> ГОДОВАЯ СТАВКА:</html></label>
-<input type="number" id="payment" placeholder="0">
-  <button onclick="calculate()">count</button>
-  <p> ИТОГ: <span id="result-total">)>0</span></p>
+<input type="number" id="price"  placeholder="0"<br><br>
+  <label for="payment"> ГОДОВАЯ СТАВКА:</html></label><br>
+<input type="number" id="payment" placeholder="0"><br><br>
+  <button onclick="calculate()">count</button><br><br>
+  <p> ИТОГ: <span id="result-total">0</span></p> USD </p>
 </body>
   
   
